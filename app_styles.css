@@ -1,0 +1,162 @@
+/* Get a fancy font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+/* fix the position of sidebar so it will stay there when scrolling */
+.sidebar {
+  color: white;
+  position: fixed;
+  width: 230px;
+  /*white-space: nowrap;
+  overflow: visible;*/
+  font-size: 20px;
+}
+
+/* fix the position of header so it will stay there when scrolling */
+.main-header{
+  position: fixed;
+  width: 100%;
+}
+
+/* change look of the title */
+.main-header .logo{
+  font-weight: bold;
+}
+
+/* add some padding to main content otherwise will get blocked by header */
+.content {
+  padding-top: 60px;
+}
+
+/* change the look when we hover over the item in the sidebar */
+.skin-black .sidebar-menu > .active > a,
+.skin-black .sidebar-menu > li:hover > a{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* change the look of the tabs */
+.tabbable > .nav > li > a{
+  font-size: 18px;
+}
+
+/* change the look of the active tab */
+.tabbable > .nav > li[class=active] > a{
+  font-size: 18px;
+  font-weight: bold;
+  /*background-color: black;
+  color: white;*/
+}
+
+/* change color of sliderinput */
+.irs-bar,
+.irs-bar-edge,
+.irs-single,
+.irs-grid-pol {
+  background: dimgrey;
+  border-color: black;
+}
+
+/*change background color of page */
+/* 
+.content-wrapper, .right-side {
+background-color: lightgrey; 
+}*/
+
+/* change look of boxes */
+.box{
+  border: 1px solid black;
+  border-radius: 15px;
+  background: white;
+}
+
+/* change look of sidebarpanels (the user input parts) */
+.well{
+  border: 1px solid black;
+  border-radius: 15px;
+  background: white;
+  padding: 10px 20px;
+}
+
+/* change font of selections */
+.selectize-input, .radio, .selectize-control{
+  font-size: 18px;
+}
+
+/* change h4 font*/
+h4 {
+  font-family: "Lato", sans-serif;
+}
+
+/* change verbatimTextOutput font*/
+pre {
+  font-size: 20px;
+}
+
+/* bold titlePanel which is h2*/
+h2{
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+/* change spacing of line breaks */
+br{
+  content: "";
+  margin: 2em;
+  display: block;
+  font-size: 25%;
+}
+
+/* change specific text font*/
+#positive_text, #death_text, #map_text, #EDA_plot_text, #cor_plot_text, #sir_plot_text{
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#cor_text, #EDA_text, #prediction_text, #sir_text, #model_build_text{
+  font-size: 18px;
+  font-style: italic;
+  padding: 20px;
+  /*color: white;*/
+}
+
+#desc_stat{
+  font-size: 20px;
+}
+
+#main_text{
+  font-size: 18px;
+  font-style: italic;
+  padding: 20px;
+  /*color: white;*/
+}
+
+#model_text{
+  margin-bottom: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+#about_team_text, #about_limit_text{
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  /*margin-bottom: 20px;*/
+  /*line-height: 40px;*/
+}
+
+/* change font size of sliders */
+.irs-grid-text { font-size: 10pt; }
+.control-label {font-size: 15pt; }
+.irs-min {font-size: 10pt; }
+.irs-max {font-size: 10pt; }
+/*.irs-grid-pol.small{height: 0;}*/
+
+/* Make text visible on inputs */
+.shiny-input-container {
+  color: #474747;
+}
